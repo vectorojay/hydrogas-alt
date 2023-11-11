@@ -1,0 +1,766 @@
+/*********** NAVIGATION *************/
+.logo {
+  width: 100px;
+}
+
+.navigation-bar {
+  color: #000 !important;
+}
+
+.text-orange {
+  color: orange !important;
+}
+
+.button-cart {
+  position: relative;
+}
+
+.cart-number-box {
+  position: absolute;
+  top: -3px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 0.7rem !important;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  color: #fff !important;
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
+
+/************** HERO SECTION ***************/
+
+.section-hero,
+.section-shop-header {
+  position: relative;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(210, 187, 194, 0.027)
+    ),
+    url(images/close-up-metallic-wine-barrels-winery.webp);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.section-hero {
+  height: 80vh;
+}
+
+.backdrop {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  backdrop-filter: blur(5px);
+}
+
+span {
+  color: orange;
+}
+
+.hero-sub-text {
+  margin-bottom: 3rem !important;
+}
+
+.btn-border-orange {
+  border-color: orange !important;
+}
+
+/************** TOP CATEGORY SECTION ***************/
+.section-top-categories,
+.section-best-deals,
+.section-weekly-popular,
+.section-banner,
+.section-help,
+.section-cylinders,
+.section-accessories {
+  margin-top: 65px;
+  padding: 40px 150px;
+}
+
+.section-top-categories h3,
+.section-best-deals h3,
+.section-weekly-popular h3,
+.section-services h3,
+.section-cylinders h3,
+.section-accessories h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.category-box,
+.best-deals-box,
+.section-weekly-box,
+.cylinders-box,
+.shop-cylinders-box,
+.shop-accessories-box {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category-box {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.category,
+.best-deal {
+  border-radius: 5px;
+}
+
+.category {
+  position: relative;
+  height: 200px;
+  width: 150px;
+  transition: all 0.4s;
+}
+
+.category:hover .category-backdrop {
+  width: 100%;
+}
+
+.category:hover .category-backdrop span {
+  display: block;
+  width: 100%;
+}
+
+.category img,
+.best-deal img,
+.help img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.category img {
+  height: 100%;
+}
+
+.category-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 10%;
+  height: 100%;
+  background-color: #198754df;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.category-backdrop span {
+  font-size: 18px;
+  font-weight: bolder;
+  /* width: 10%; */
+  display: none;
+  padding: 8px;
+  white-space: nowrap;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/******************** ACHIEVEMENTS SECTION ******************/
+.section-achievements {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.achievements-box {
+  gap: 100px;
+}
+
+.achievement p {
+  font-size: 48px;
+  /* font-weight: bold; */
+  color: #ffa500;
+  margin-bottom: -12px;
+}
+
+.achievement span {
+  font-size: 14px;
+  color: #888;
+}
+
+.green {
+  color: #198754 !important;
+}
+
+/********************* BEST DEALS SECTION ********************/
+
+.best-deals-box,
+.section-weekly-box {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+}
+
+.best-deal {
+  cursor: pointer;
+}
+
+.best-deal h5 {
+  color: #736e6e;
+}
+
+.best-deal h5:hover {
+  text-decoration: underline;
+}
+
+.best-deal:hover {
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12); */
+}
+
+/********************** SERVICES SECTION **********************/
+.section-services {
+  padding: 40px 150px;
+}
+
+.services-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.service {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #ffa600d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.service-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* height: 200px;
+  width: 200px; */
+}
+
+.service-icon,
+.payment-process-icon {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 15px;
+
+  border-radius: 50%;
+
+  height: 50px;
+  width: 50px;
+}
+
+.service-icon {
+  color: green;
+  border: 1px solid green;
+}
+
+.service-details {
+  padding: 15px 5px;
+}
+
+.service-details h5 {
+  font-size: 18px;
+  color: #ffa600d4;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+.service-details p {
+  line-height: 1;
+  color: #198754;
+}
+
+/****************** SECTION HELP ***********************/
+
+.section-help-box {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+}
+
+.help-heading {
+  background-color: #f3f3f3;
+  /* width: 100%; */
+  height: 40%;
+  padding: 40px;
+}
+
+.help-heading h5 {
+  cursor: pointer;
+}
+
+.help-heading h5:hover {
+  text-decoration: underline;
+}
+
+/******************* CYLINDERS SECTION **********************/
+.cylinders-box {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/******************** SECTION BANNER ************************/
+
+.refill-box {
+  background-image: linear-gradient(to right, #ffa500, #ffa60085),
+    url(images/3d-rendering-gas-cylinder.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.repaint-box {
+  background-image: linear-gradient(to right, #198754, #19875486),
+    url(images/bggas.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.repaint-box p:nth-child(1) {
+  /* font-size: 10px; */
+}
+
+.accessories-box {
+  background-image: linear-gradient(to right, #fff, #ffffff7c),
+    url(images/steel-oxygen-tanks-arrangement.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* PRODUCT DETAILS */
+.prod-details {
+  padding: 10px;
+}
+
+.prod-details h5 {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.prod-btn-box {
+  padding: 10px;
+}
+
+.greyish {
+  color: #736e6e;
+}
+
+.priceLine {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
+
+/**************************** SHOP PAGE ***********************************/
+
+.section-products .card-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section-shop-header {
+  height: 40vh;
+  position: relative;
+}
+
+.shop-header-box {
+  width: 75%;
+}
+
+.section-shop-header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(210, 187, 194, 0.027)
+    ),
+    url(images/hero-bg.webp);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.shop-cylinders-box,
+.shop-accessories-box {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.greyish {
+  color: #736e6e;
+}
+
+.priceLine {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
+
+.eyeicon {
+  padding: 1rem !important;
+  border: 1px solid rgb(235, 227, 227);
+}
+
+.darkBlue {
+  color: rgb(9, 9, 135);
+}
+
+.red {
+  color: red;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+/************************* CART PAGE ***********************/
+.cart {
+  padding: 40px;
+  overflow-x: auto;
+}
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+.cart table img {
+  width: 70px;
+}
+
+.cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+.cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+.cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+.cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+.cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+.cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+.cart table tbody tr td {
+  padding-top: 50px;
+}
+
+.cart table tbody td {
+  font-size: 13px;
+}
+
+.cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.coupon h3,
+.subtotal h3 {
+  padding-bottom: 15px;
+}
+
+.coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 50%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+.coupon button {
+  padding: 12px 20px;
+}
+
+.subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+.subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.form-check-label small {
+  font-size: 10px;
+  color: red;
+  font-family: cursive;
+}
+
+/***************** SINGLE PRODUCT PAGE ******************/
+.section-product {
+  display: flex;
+  margin-top: 20px;
+}
+
+.single-prod-img {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.single-prod-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.single-prod-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+.single-prod-details h2 {
+  font-size: 26px;
+}
+
+.single-prod-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.single-prod-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.single-prod-details input:focus {
+  outline: none;
+}
+
+.single-prod-details button {
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  padding: 10px 5px;
+}
+
+.single-prod-details button:hover {
+  background-color: #198754;
+}
+
+.single-prod-details span {
+  line-height: 25px;
+}
+
+/********************** SECTION ABOUT-US *******************/
+.about-us-box {
+  display: flex;
+}
+
+.about-us-img-box {
+  position: fixed;
+  padding: 50px 0 150px 100px;
+  width: 50%;
+}
+
+.about-us-img-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.about-details-box {
+  padding: 50px 70px 150px 30px;
+  width: 50%;
+  margin-left: auto;
+}
+
+.retail-outlets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.group {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-details-box h2 {
+  color: #ffa500;
+}
+
+.about-details-box p,
+.about-details-box ul {
+  margin-bottom: 50px;
+}
+
+.outlet {
+  /* display: grid;
+  justify-items: center;
+  align-items: center; */
+  background-color: #198754;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.outlet h4 {
+  white-space: nowrap;
+}
+
+.outlet h4 {
+  white-space: nowrap;
+}
+
+.outlet ion-icon {
+  height: 50px;
+  width: 50px;
+}
+
+/***************** HELP PAGE *********************/
+.section-faq {
+  margin-top: 92px;
+}
+
+/***************** PAYMENT PROCESS PAGE *********************/
+.section-payment-process {
+  margin: 80px 0;
+}
+
+.payment-process-box {
+  width: 80%;
+  padding: 100px;
+  background-color: #198754;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.payment-process {
+  padding: 0 72px;
+}
+
+.payment-process h3 {
+  font-size: 48px;
+}
+
+.payment-process li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.payment-process strong {
+  font-size: 20px;
+  color: #ffa500;
+}
+.payment-process-heading {
+  margin-bottom: 64px;
+}
+
+.payment-process-icon {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.left,
+.right {
+  padding: 0;
+  width: 50%;
+}
+
+/***************** CONFIRM ORDER PAGE *********************/
+.section-order-confirmation {
+  padding: 80px 0;
+}
+
+.order-details-box {
+  width: 80%;
+  color: #555;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.order-list li {
+  margin-bottom: 10px;
+  /* font-size: 24px; */
+}
+
+.acc-details-modal {
+  padding: 40px;
+}
+
+.modal-body p {
+  /* margin-bottom: 0 !important; */
+}
+
+.ordered-items-heading {
+  margin-top: 120px;
+}
+
+.ordered-items-table th {
+  color: #555 !important;
+}

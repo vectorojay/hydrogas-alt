@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      text-success
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>HydroGas-Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/album/"
+    />
+
+    <link
+      href="../bootstrap-5.2.2-examples/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="p-1 grid gap-3 bg-success text-white d-flex">
+      <p><ion-icon name="mail-sharp"></ion-icon>info@hydrogas.com.ng</p>
+      <p><ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083</p>
+    </div> -->
+
+    <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
+      <div class="container-fluid mx-auto">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <a class="navbar-brand" href="index.html"
+            ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 p-2"
+              id="search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form> -->
+          <div class="d-flex mt-2">
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
+              type="submit"
+            >
+              Order a Refill
+            </a>
+            <button
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
+              onclick="window.location.href='cart.html';"
+            >
+              <ion-icon
+                name="cart"
+                style="height: 1.8rem; width: 1.8rem"
+              ></ion-icon>
+              <div class="cart-number-box">
+                <span class="cart-number text-white">15</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-product container mx-auto">
+      <div class="single-prod-img">
+        <img
+          src="images/8816656.webp"
+          id="mainImg"
+          alt="product"
+          width="100%"
+        />
+      </div>
+      <div class="single-prod-details">
+        <h4>Steel Gas</h4>
+        <h2>N13,500.00</h2>
+
+        <select>
+          <option value="">Select Kg</option>
+          <option value="">12 Kg</option>
+          <option value="">9 Kg</option>
+          <option value="">6 Kg</option>
+          <option value="">4 Kg</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="btn px-3">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          magnam veniam placeat quam eligendi sint labore minus temporibus
+          voluptas. Soluta dolores molestias aliquam tempora exercitationem
+          eius, veritatis nesciunt, hic a suscipit iste culpa earum possimus
+          velit nihil beatae quis! Est, quisquam expedita doloribus fugit
+          molestiae minima neque corrupti veritatis aliquid.</span
+        >
+      </div>
+    </section>
+
+    <section class="section-weekly-popular">
+      <h3>Best Deals For You</h3>
+      <div class="section-weekly-box">
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829612.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+        <div class="best-deal" height="200px">
+          <img src="images/8829609.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="best-deal" height="200px">
+          <img src="images/8816656.webp" alt="" />
+          <div class="prod-details">
+            <div class="mb-2 mt-2">
+              <span>12kg</span>
+            </div>
+            <h5>Green Cylinder Product</h5>
+            <div class="product-price-variant gap5">
+              <span class="price current-price smallBoldF">N8500.00</span>
+              <span class="price old-price priceLine">N12500.00</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-start align-items-center gap-2 mt-2"
+          >
+            <button class="btn text-success border-success">
+              Add to cart
+              <i class="fa fa-shopping-cart ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; HydroPet 2023</p>
+        <p class="mb-0">
+          Just Browsing? <a href="/">Visit our store</a> or reach out to us via
+          our <a href="../getting-started/introduction/">contact</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

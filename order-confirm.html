@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      text-success
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>HydroGas-Confirm Order</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/album/"
+    />
+
+    <link
+      href="../bootstrap-5.2.2-examples/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="p-1 grid gap-3 bg-success text-white d-flex">
+      <p><ion-icon name="mail-sharp"></ion-icon>info@hydrogas.com.ng</p>
+      <p><ion-icon name="phone-portrait-sharp"></ion-icon>+234-706-964-2083</p>
+    </div> -->
+
+    <nav class="navbar navbar-expand-md bg-light p-3 sticky-top">
+      <div class="container-fluid mx-auto">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <a class="navbar-brand" href="index.html"
+            ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black active"
+                aria-current="page"
+                href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 p-2"
+              id="search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form> -->
+          <div class="d-flex mt-2">
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
+              type="submit"
+            >
+              Order a Refill
+            </a>
+            <button
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
+              onclick="window.location.href='cart.html';"
+            >
+              <ion-icon
+                name="cart"
+                style="height: 1.8rem; width: 1.8rem"
+              ></ion-icon>
+              <div class="cart-number-box">
+                <span class="cart-number text-white">15</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-shop-header">
+      <div class="backdrop">
+        <div class="container col-xxl-8 px-4 py-5 w-75 mx-auto">
+          <div class="align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h2 class="display-5 fw-bold lh-1 mb-3 text-white">
+                Online Payment Processes
+              </h2>
+              <p class="text-orange">
+                Check through our list of payment methods for seamless
+                transactions. Or you can
+                <a class="text-white" href="javascript:void(Tawk_API.toggle())"
+                  >Contact Us</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-order-confirmation">
+      <div class="order-details-box mx-auto">
+        <div>
+          <h3 class="d-flex align-items-center greyish mb-5">
+            Order Received
+            <ion-icon class="ms-1 text-success" name="bag-check"></ion-icon>
+          </h3>
+          <p>Hey <strong>John Doe,</strong></p>
+          <p>Thank you for you order.</p>
+          <p>
+            Kindly transfer the total amount indicated below to the account
+            details provided. <br />
+            Ensure to include your Order Number as the Payment
+            Reference/Narration, while making your transfer.
+          </p>
+        </div>
+
+        <ul class="order-list mt-5">
+          <h5 class="mb-4">Your Order Details:</h5>
+          <li>
+            Your Order Number is<strong class="text-success">
+              #345-909-124</strong
+            >
+          </li>
+          <li>
+            Date <strong class="text-success"> 24th October, 2023</strong>
+          </li>
+          <li>
+            Your email is
+            <strong class="text-success"> johndoe@useremail.com</strong>
+          </li>
+          <li>
+            Your total amount is <strong class="text-success"> N15,500</strong>
+          </li>
+          <li>
+            Your payment method is<strong class="text-success">
+              Bank Transfer</strong
+            >
+          </li>
+          <p class="mt-5 mb-5 text-danger">
+            Screenshot or copy your Order Number. Send it, alongside the details
+            of your transfer to our
+            <a class="text-success" href="">WhatsApp</a> immediately, in order
+            to process and finalize your order.
+          </p>
+        </ul>
+
+        <div>
+          <div class="modal-dialog" role="document">
+            <div
+              class="acc-details-modal modal-content rounded-4 shadow bg-success text-white"
+            >
+              <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5 mb-3">Our Bank Details</h1>
+              </div>
+              <div class="modal-body py-0">
+                <p>Bank Name: <strong>MoniePoint</strong></p>
+                <p>Account Number: <strong>2339001212</strong></p>
+                <p>Account Name: <strong>HydroPet Gas Limited</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ordered-items-heading"><h5>Ordered Items</h5></div>
+        <table class="ordered-items-table table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Orange Gas Cylinder <span>Qty 2</span></th>
+              <td>N18,500</td>
+            </tr>
+
+            <tr class="">
+              <th scope="row">Ash Gas Cylinder <span>Qty 4</span></th>
+              <td>N12,500</td>
+            </tr>
+            <tr class="">
+              <th scope="row">Green Gas Cylinder <span>Qty 1</span></th>
+              <td>N15,000</td>
+            </tr>
+
+            <tr class="">
+              <th scope="row">Shipping <span>Within Port-Harcourt</span></th>
+              <td>N1,500</td>
+            </tr>
+
+            <tr>
+              <th></th>
+              <td>Subtotal: <strong>N47,500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="mt-5">
+          <h4>Billing Address</h4>
+          <p class="mb-0">
+            Your Billing address is No. 12B Ozuoba road, Off Choba-Rumuola
+            Highway, Port Harcourt.
+          </p>
+          <p ">Rivers State</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">&copy; HydroPet 2023</p>
+        <p class="mb-0">
+          Just Browsing? <a href="/">Visit our store</a> or reach out to us via
+          our <a href="../getting-started/introduction/">contact</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/6509b11f0f2b18434fd9625b/1hamtnprj";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
