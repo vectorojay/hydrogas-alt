@@ -51,7 +51,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img class="logo" src="images/cropped-hydropet-logo.png" alt=""
           /></a>
           <ul class="navbar-nav me-auto mb-2 ms-5 mb-md-0 gap-4">
@@ -83,16 +83,32 @@
               <a class="nav-link text-black" href="about.html">About</a>
             </li>
           </ul>
-
-          <div class="d-flex mt-2">
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 p-2"
+              id="search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <button
-              class="btn btn-outline-success bg-success text-white p-1 text-nowrap ms-3 px-3"
+              class="btn btn-outline-success btn-border-orange text-orange p-1"
+              id="search-btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form> -->
+          <div class="d-flex mt-2">
+            <a
+              href="javascript:void(Tawk_API.toggle())"
+              class="btn btn-outline-success text-success p-1 text-nowrap ms-3 px-3"
               type="submit"
             >
               Order a Refill
-            </button>
+            </a>
             <button
-              class="button-cart btn bg-success text-white d-flex p-1 text-nowrap ms-3 px-3"
+              class="button-cart btn text-success d-flex p-1 text-nowrap ms-3 px-3"
               onclick="window.location.href='cart.html';"
             >
               <ion-icon
