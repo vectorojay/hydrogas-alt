@@ -79,8 +79,8 @@ span {
   border-color: orange !important;
 }
 
-/************** TOP CATEGORY SECTION ***************/
-.section-top-categories,
+/************** TOP featured-product SECTION ***************/
+.section-featured-products,
 .section-best-deals,
 .section-weekly-popular,
 .section-banner,
@@ -91,7 +91,7 @@ span {
   padding: 40px 150px;
 }
 
-.section-top-categories h3,
+.section-featured-products h3,
 .section-best-deals h3,
 .section-weekly-popular h3,
 .section-services h3,
@@ -100,7 +100,7 @@ span {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.category-box,
+.featured-product-box,
 .best-deals-box,
 .section-weekly-box,
 .cylinders-box,
@@ -111,32 +111,32 @@ span {
   gap: 10px;
 }
 
-.category-box {
+.featured-product-box {
   grid-template-columns: repeat(7, 1fr);
 }
 
-.category,
+.featured-product,
 .best-deal {
   border-radius: 5px;
 }
 
-.category {
+.featured-product {
   position: relative;
   height: 200px;
   width: 150px;
   transition: all 0.4s;
 }
 
-.category:hover .category-backdrop {
+/* .featured-product:hover .featured-product-backdrop {
   width: 100%;
-}
+} */
 
-.category:hover .category-backdrop span {
+/* .featured-product:hover .featured-product-backdrop span {
   display: block;
   width: 100%;
-}
+} */
 
-.category img,
+.featured-product img,
 .best-deal img,
 .help img {
   width: 100%;
@@ -144,12 +144,12 @@ span {
   border-radius: 5px;
 }
 
-.category img {
+.featured-product img {
   height: 100%;
 }
 
-.category-backdrop {
-  position: absolute;
+.featured-product-backdrop {
+  /* position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -159,10 +159,10 @@ span {
   height: 100%;
   background-color: #198754df;
   border-radius: 5px;
-  transition: all 0.4s;
+  transition: all 0.4s; */
 }
 
-.category-backdrop span {
+.featured-product-backdrop span {
   font-size: 18px;
   font-weight: bolder;
   /* width: 10%; */
@@ -554,7 +554,11 @@ span {
 .form-check-label small {
   font-size: 10px;
   color: red;
-  font-family: cursive;
+  font-family: monospace;
+}
+
+.cc-info-icon {
+  cursor: pointer;
 }
 
 /***************** SINGLE PRODUCT PAGE ******************/
@@ -763,4 +767,8 @@ span {
 
 .ordered-items-table th {
   color: #555 !important;
+}
+
+.hidden {
+  display: none;
 }

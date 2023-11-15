@@ -165,6 +165,15 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .cart-add {
+    flex-direction: column;
+  }
+
+  .coupon,
+  .subtotal {
+    width: 100%;
+  }
+
   /******************* SINGLE PRODUCT **************************/
 
   .section-product {
@@ -210,6 +219,7 @@
 
   .cart-add {
     flex-direction: column;
+    padding: 0;
   }
 
   .coupon {
@@ -252,6 +262,7 @@
 
   .cart-add {
     flex-direction: column;
+    padding: 0;
   }
 
   .coupon {
@@ -339,6 +350,10 @@
 
   .refill-box {
     padding: unset !important;
+  }
+
+  .cart-add {
+    padding: 0;
   }
 
   /******************* SINGLE PRODUCT **************************/

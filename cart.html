@@ -300,6 +300,43 @@
           </div>
         </div>
 
+        <h4 class="mb-3 mt-5">Delivery Method</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input
+              id="home-delivery"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+            />
+            <label for="home-delivery">Home Delivery </label>
+          </div>
+          <div class="form-check">
+            <input
+              id="walk-in"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              required
+            />
+            <label
+              class="form-check-label d-flex align-items-center"
+              for="walk-in"
+              >Walk-In PickUp
+              <ion-icon
+                class="cc-info-icon ms-1"
+                name="information-circle"
+              ></ion-icon
+              ><small class="cc-info-message hidden"
+                >Visit our office to pick your order.</small
+              ></label
+            >
+          </div>
+        </div>
+
         <hr class="my-4" />
 
         <div class="form-check">
@@ -335,9 +372,12 @@
               class="form-check-label d-flex align-items-center"
               for="credit"
               >Credit card
-              <ion-icon class="ms-1" name="information-circle"></ion-icon
-              ><small
-                >Credit card payment method is not available for now!</small
+              <ion-icon
+                class="cc-info-icon ms-1"
+                name="information-circle"
+              ></ion-icon
+              ><small class="cc-info-message hidden"
+                >This payment method is not available for now!</small
               ></label
             >
           </div>
@@ -353,7 +393,7 @@
           </div>
         </div>
 
-        <div class="row gy-3">
+        <div class="cc-info row gy-3">
           <div class="col-md-6">
             <label for="cc-name" class="form-label">Name on card</label>
             <input
@@ -362,6 +402,7 @@
               id="cc-name"
               placeholder=""
               required
+              disabled
             />
             <small class="text-muted">Full name as displayed on card</small>
             <div class="invalid-feedback">Name on card is required</div>
@@ -375,6 +416,7 @@
               id="cc-number"
               placeholder=""
               required
+              disabled
             />
             <div class="invalid-feedback">Credit card number is required</div>
           </div>
@@ -387,6 +429,7 @@
               id="cc-expiration"
               placeholder=""
               required
+              disabled
             />
             <div class="invalid-feedback">Expiration date required</div>
           </div>
@@ -399,6 +442,7 @@
               id="cc-cvv"
               placeholder=""
               required
+              disabled
             />
             <div class="invalid-feedback">Security code required</div>
           </div>
@@ -461,6 +505,19 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      let creditInfoBox = document.querySelector(".cc-info");
+      document.getElementById("debit").addEventListener("click", function () {
+        creditInfoBox.style.display = "none";
+      });
+
+      let creditInfoIcon = document.querySelector(".cc-info-icon");
+      let creditInfoMessage = document.querySelector(".cc-info-message");
+      creditInfoIcon.addEventListener("click", function () {
+        creditInfoMessage.classList.toggle("hidden");
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
